@@ -1,0 +1,113 @@
+= SIGCOMM'18 artifact for "Homa: a receiver-driven low-latency transport protocol using network priorities"
+:toc:
+:toc-placement!:
+
+toc::[]
+
+# Introduction
+
+With this artifact, we provide the reviewers with the ability to run workloads W3-W5 using the RAMCloud implementation of Homa transport and reproduce its performance numbers.
+
+The files included in this repository are:
+
+```
+$ tree
+.
+├── getRamcloud.sh
+├── localconfigGen.py
+├── profile.py
+├── README.adoc
+├── setup-45XGc-QoS.py
+└── startup.sh
+```
+
+  * link:getRamcloud.sh[] - Script for building RAMCloud
+  * link:localconfigGen.sh[] - Generates RAMCloud cluster config file
+  * link:profile.py[] - CloudLab profile used to instantiate new experiments
+  * link:README.adoc[] - This file
+  * link:setup-45XGc-QoS.py[] - Script generating commands used to configure the switch
+  * link:startup.sh[] - Startup service that installs dependencies required for the experiment
+
+# Experiment Setup
+
+We conduct our experiment using the http://docs.cloudlab.us/hardware.html#%28part._cloudlab-utah%29[m510] machines available at CloudLab.
+
+## Start Experiment
+
+To start a new experiment, follow the instructions at CloudLab's http://docs.cloudlab.us/getting-started.html[getting-started] page and use the public profile named https://www.cloudlab.us/show-profile.php?uuid=78fecaa7-cc3d-11e8-b338-90e2ba22fee4[`HomaArtifactEvaluation`]. This profile will help you reserve a full chassis of 45 nodes interconnected by a Moonshot 45XGc switch.
+
+It could take 10-15 minutes to instantiate a new experiment and complete our custom https://github.com/PlatformLab/homa-paper-artifact/blob/master/startup.sh[startup service]. Make sure file `/local/startup_service_done` is present on all nodes of the experiment before proceeding to the next step.
+
+## Switch Configuration
+
+Homa transport relies on network priorities to achieve low tail-latency. Therefore, we need to enable the QoS setting of the 45XGc switch to recognize the packet priorities. Note that the current policy of CloudLab is to only grant full switch access to people who have reserved a full chassis. Once you have successfully reserved a full chassis, you can contact the CloudLab support team (support@cloudlab.us) to request access to the switch. You should receive further instructions shortly. Extend the experiment to avoid expiration if necessary. The commands used to configure the switch can be generated as
+```
+$ ./setup-45XGc-QoS.py 
+```
+You can simply copy the output and paste it to the control console of the switch.
+
+
+# Build RAMCloud
+
+To fetch the source code of RAMCloud and build the executables, run the following on node `rcmaster`:
+```
+$ cd /shome
+$ /local/repository/getRamcloud.sh
+```
+RAMCloud will be available at `/shome/RAMCloud` when the script completes.
+
+# Run Experiments
+
+All commands in this section are assumed to run from the RAMCloud top directory at `/shome/RAMCloud` on node `rcmaster`.
+
+## Sanity Check
+
+To make sure RAMCloud and DPDK are built correctly, run a basic performance test as
+```
+$ scripts/clusterperf.py --superuser --replicas 0 --transport homa+dpdk --dpdkPort 1 --verbose echo_basic
+```
+
+If everything works as expected, you should see performance numbers similar to the following output
+```
+echo0                  5.2 us     send 0B message, receive 0B message median
+echo0.min              5.0 us     send 0B message, receive 0B message minimum
+echo0.9                5.6 us     send 0B message, receive 0B message 90%
+echo0.99               6.5 us     send 0B message, receive 0B message 99%
+echo0.999             27.0 us     send 0B message, receive 0B message 99.9%
+echoBw0                0.0 B/s    bandwidth sending 0B messages
+echo100                5.7 us     send 100B message, receive 100B message median
+echo100.min            5.1 us     send 100B message, receive 100B message minimum
+echo100.9              5.9 us     send 100B message, receive 100B message 90%
+echo100.99             6.4 us     send 100B message, receive 100B message 99%
+echo100.999          508.9 us     send 100B message, receive 100B message 99.9%
+echoBw100             14.1 MB/s   bandwidth sending 100B messages
+...... more lines omitted ......
+```
+
+## Generate Baseline Numbers
+
+Before we can run the workloads and generate the slowdown numbers reported in the paper, we need to first obtain the baseline latency numbers (i.e., when the network is empty) for all message sizes in workloads W3-W5. This can be done by running
+```
+$ benchmarks/homa/scripts/compute_baseline.sh basic+dpdk W3
+$ benchmarks/homa/scripts/compute_baseline.sh basic+dpdk W4
+$ benchmarks/homa/scripts/compute_baseline.sh basic+dpdk W5
+$ benchmarks/homa/scripts/compute_baseline.sh homa+dpdk W3
+$ benchmarks/homa/scripts/compute_baseline.sh homa+dpdk W4
+$ benchmarks/homa/scripts/compute_baseline.sh homa+dpdk W5
+```
+This step could take a while for workloads with many different message sizes. You can monitor the progress by
+```
+$ watch "tail logs/latest/client*.log"
+```
+The results will be written to `benchmarks/homa/{basic,homa}_{W3,W4,W5}_baseline.txt`.
+
+## Run Workloads
+
+To run a particular workload with various configurations (e.g. homa vs. basic, load factor, # priorites available, etc.), use the `run_workload.sh` script. This script will run the same workload using different configurations and compute the corresponding message slowdown numbers in the end. For example, the following command will run worload W3 with 16 nodes using different configurations with each configuration run taking 100 seconds:
+```
+$ benchmarks/homa/scripts/run_workload.sh W3 16 100
+```
+
+Each configuration run must be long enough to collect enough samples to compute 99-percentile tail latency for each message size. For W3 and W5, we recommend allocating at least one hour to each configuration run; for W4, 10 minutes should be enough.
+
+Each invocation of the `run_workload.sh` script will create a unique directory that looks something like `homa_experiment_YYYYMMDDHHMMSS`. You can find the computed slowdown numbers (in `slowdownImpl.txt`), the raw message round-trip latency numbers (in `*_experiment.txt`), and some RAMCloud log files inside that directory.
