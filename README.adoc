@@ -6,7 +6,7 @@ toc::[]
 
 # Introduction
 
-With this artifact, we provide the reviewers with the ability to run workloads W3-W5 using the RAMCloud implementation of Homa transport and reproduce its performance numbers.
+With this artifact, we provide the reviewers with the ability to run workloads W3-W5 using the RAMCloud implementation of Homa transport and reproduce its performance numbers. For the simulation code, please check out the https://github.com/PlatformLab/HomaSimulation/tree/omnet_simulations/RpcTransportDesign/OMNeT%2B%2BSimulation[HomaSimulation] repository.
 
 The files included in this repository are:
 
@@ -40,7 +40,7 @@ It could take 10-15 minutes to instantiate a new experiment and complete our cus
 
 ## Switch Configuration
 
-Homa transport relies on network priorities to achieve low tail-latency. Therefore, we need to enable the QoS setting of the 45XGc switch to recognize the packet priorities. Note that the current policy of CloudLab is to only grant full switch access to people who have reserved a full chassis. Once you have successfully reserved a full chassis, you can contact the CloudLab support team (support@cloudlab.us) to request access to the switch. You should receive further instructions shortly. Extend the experiment to avoid expiration if necessary. The commands used to configure the switch can be generated as
+Homa transport relies on network priorities to achieve low tail-latency. Therefore, we need to enable the QoS setting of the 45XGc switch to recognize the packet priorities. Note that the current policy of CloudLab is to only grant full switch access to people who have reserved a full chassis. This can be sometimes difficult depending on the resource availability. As of 12/2018, the best way to go about this is to use the reservation mechanism of CloudLab. Once you have successfully reserved a full chassis, you can contact the CloudLab support team (support@cloudlab.us) to request access to the switch. You should receive further instructions shortly. Extend the experiment to avoid expiration if necessary. The commands used to configure the switch can be generated as
 ```
 $ ./setup-45XGc-QoS.py 
 ```
