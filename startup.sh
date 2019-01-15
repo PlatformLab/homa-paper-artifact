@@ -119,10 +119,8 @@ else
 
     # Disable intel_idle driver to gain control over C-states (this driver will
     # most ignore any other BIOS setting and kernel parameters). Then limit
-    # available C-states to C1 by "idle=halt".
-    kernel_boot_params+=" intel_idle.max_cstate=0 idle=halt"
-    # Or more aggressively, keep processors in C0 even when they are idle.
-    #kernel_boot_params+=" idle=poll"
+    # available C-states to C0 by "idle=poll".
+    kernel_boot_params+=" intel_idle.max_cstate=0 idle=poll"
 
     # Update GRUB with our kernel boot parameters
     sed -i "s/GRUB_CMDLINE_LINUX_DEFAULT=\"/GRUB_CMDLINE_LINUX_DEFAULT=\"$kernel_boot_params /" /etc/default/grub

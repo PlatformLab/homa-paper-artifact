@@ -17,6 +17,9 @@ DEBUG := no
 CCACHE := yes
 DEBUG_OPT := yes
 
+C_STANDARD := c14
+CXX_STANDARD := c++14
+
 HOMA_BENCHMARK := yes
 
 DPDK := yes

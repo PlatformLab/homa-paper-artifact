@@ -1,0 +1,500 @@
+num_servers=(16), available hosts=(40) defined in config.py
+disjunct= True
+ensureServers command: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ensureServers -C homa+udp:host=128.110.154.80,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20190115025004/ensureServers.log
+Coordinator started on ms1344 at homa+udp:host=128.110.154.80,port=12246
+Coordinator command line arguments ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/coordinator -C homa+udp:host=128.110.154.80,port=12246 -l NOTICE --logFile logs/20190115025004/coordinator.ms1344.log  --dpdkPort 1 --configDir config
+Server started on ms1303 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server1.ms1303.log --preferredIndex 1 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1304 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server2.ms1304.log --preferredIndex 2 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1305 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server3.ms1305.log --preferredIndex 3 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1306 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server4.ms1306.log --preferredIndex 4 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1307 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server5.ms1307.log --preferredIndex 5 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1308 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server6.ms1308.log --preferredIndex 6 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1309 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server7.ms1309.log --preferredIndex 7 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1310 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server8.ms1310.log --preferredIndex 8 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1311 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server9.ms1311.log --preferredIndex 9 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1312 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server10.ms1312.log --preferredIndex 10 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1313 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server11.ms1313.log --preferredIndex 11 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1314 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server12.ms1314.log --preferredIndex 12 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1316 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server13.ms1316.log --preferredIndex 13 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1317 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server14.ms1317.log --preferredIndex 14 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1318 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server15.ms1318.log --preferredIndex 15 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+Server started on ms1319 at homa+dpdk:: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/server -C homa+udp:host=128.110.154.80,port=12246 -L homa+dpdk: -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20190115025004/server16.ms1319.log --preferredIndex 16 -t 4000 --dpdkPort 1 --configDir config  -f /dev/null
+ensureServers command: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ensureServers -C homa+udp:host=128.110.154.80,port=12246 -m 16 -b 16 -l 1 --wait 30 --logFile logs/20190115025004/ensureServers.log
+All servers running
+Client 0 started on ms1320: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 0 --logFile logs/20190115025004/client1.ms1320.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 1 started on ms1321: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 1 --logFile logs/20190115025004/client2.ms1321.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 2 started on ms1322: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 2 --logFile logs/20190115025004/client3.ms1322.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 3 started on ms1323: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 3 --logFile logs/20190115025004/client4.ms1323.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 4 started on ms1325: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 4 --logFile logs/20190115025004/client5.ms1325.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 5 started on ms1326: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 5 --logFile logs/20190115025004/client6.ms1326.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 6 started on ms1327: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 6 --logFile logs/20190115025004/client7.ms1327.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 7 started on ms1328: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 7 --logFile logs/20190115025004/client8.ms1328.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 8 started on ms1329: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 8 --logFile logs/20190115025004/client9.ms1329.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 9 started on ms1330: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 9 --logFile logs/20190115025004/client10.ms1330.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 10 started on ms1331: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 10 --logFile logs/20190115025004/client11.ms1331.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 11 started on ms1332: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 11 --logFile logs/20190115025004/client12.ms1332.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 12 started on ms1333: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 12 --logFile logs/20190115025004/client13.ms1333.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 13 started on ms1334: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 13 --logFile logs/20190115025004/client14.ms1334.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 14 started on ms1335: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 14 --logFile logs/20190115025004/client15.ms1335.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+Client 15 started on ms1336: ASAN_OPTIONS=detect_leaks=0 /shome/RAMCloud/obj/apps/ClusterPerf -C homa+udp:host=128.110.154.80,port=12246 --numClients 16 --clientIndex 15 --logFile logs/20190115025004/client16.ms1336.log --seconds 600 --targetTput 2.9 --size 100 --maxSessions 1 --messageSizeCDF benchmarks/homa/messageSizeCDFs/W8.txt echo_workload --dpdkPort 1 --configDir config
+kxrgkobc finished
+owwteqff finished
+vliphptd finished
+rqcqbumv finished
+mekgnccl finished
+etrktjst finished
+jrygfake finished
+rwwjlutl finished
+djfplmum finished
+aldwirvp finished
+pwxscpib finished
+ctdpnjiu finished
+tphrlikw finished
+bfqwordv finished
+jtyjmfnr finished
+mxcdxjmb finished
+# Generated by 'clusterperf.py echoWorkload'
+#
+
+#   Size   Samples       Min       Avg       50%       90%       99%     99.9%       Max
+#---------------------------------------------------------------------------------------
+      53    337276       4.5       8.0       6.1      15.3      27.4      58.7     269.0
+      55    336939       4.5       8.0       6.1      15.3      27.7      65.7     240.9
+      58    338443       4.5       8.0       6.1      15.3      27.5      66.3     217.1
+      62    336261       4.6       8.0       6.2      15.3      27.6      68.8     225.1
+      65    337857       4.6       8.0       6.2      15.3      27.7      75.5     216.7
+      68    337774       4.6       8.0       6.2      15.4      27.6      74.6     220.4
+      72    338559       4.6       8.0       6.2      15.4      27.8      65.2     208.5
+      76    336591       4.7       8.1       6.2      15.4      27.7      69.8     252.2
+      80    337950       4.7       8.1       6.3      15.4      28.2      71.8     200.1
+      84    338119       4.7       8.1       6.3      15.4      28.1      67.3     268.0
+      89    360559       4.7       8.1       6.3      15.4      27.9      70.1     224.9
+      95    360579       4.9       8.3       6.5      15.5      27.7      70.7     196.0
+     101    358930       4.9       8.3       6.5      15.5      27.9      78.1     256.6
+     107    360811       4.9       8.3       6.5      15.5      28.1      75.3     207.0
+     113    359543       5.0       8.3       6.5      15.5      27.7      73.1     236.1
+     120    359300       5.0       8.3       6.5      15.5      27.8      65.7     213.2
+     128    360116       5.0       8.3       6.6      15.5      27.8      68.0     235.1
+     136    358899       5.0       8.4       6.6      15.5      27.8      87.3     220.3
+     144    359781       5.1       8.4       6.6      15.6      27.9      73.4     222.2
+     153    358765       5.1       8.4       6.7      15.6      27.8      72.2     222.9
+     164    491868       5.2       8.5       6.7      15.6      28.0      77.7     227.7
+     175    492592       5.2       8.5       6.8      15.7      28.0      64.0     233.7
+     187    492290       5.3       8.6       6.8      15.7      27.9      64.3     214.5
+     201    491129       5.3       8.6       6.8      15.7      28.1      68.1     233.9
+     215    493773       5.4       8.7       6.9      15.8      28.2      69.1     245.3
+     230    494029       5.4       8.7       6.9      15.9      28.4      82.7     235.9
+     246    492580       5.5       8.8       7.0      15.9      28.1      78.3     273.3
+     263    492137       5.6       8.8       7.0      15.9      28.2      72.5     255.3
+     281    492724       5.7       8.9       7.1      16.0      28.1      67.5     255.2
+     301    491404       5.8       9.1       7.2      16.2      28.3      68.9     200.3
+     317     60862       6.0       9.1       7.3      16.1      28.1      95.0     183.8
+     333     60975       6.0       9.2       7.3      16.3      28.8      60.1     281.8
+     350     60719       6.1       9.2       7.4      16.3      28.7      54.9     216.2
+     369     60750       6.1       9.3       7.5      16.4      29.5      57.1     215.8
+     388     61235       6.2       9.4       7.6      16.5      29.5      86.3     181.2
+     408     60903       6.3       9.5       7.7      16.7      29.0      94.0     188.1
+     429     61010       6.4       9.6       7.8      16.7      29.3      58.5     229.6
+     452     60930       6.4       9.7       7.9      16.8      29.1      79.6     250.0
+     475     60808       6.6       9.7       8.0      16.8      28.7      58.4     178.1
+     500     60699       6.7       9.8       8.0      16.8      29.0      58.6     182.6
+     512     81649       6.8       9.9       8.1      16.9      29.1      58.9     189.2
+     525     81346       6.8       9.9       8.1      16.9      29.5      86.1     201.3
+     538     81222       6.8       9.9       8.2      16.9      29.2      64.0     188.0
+     552     81217       6.9      10.0       8.2      16.9      29.6      62.9     225.3
+     565     80914       6.9      10.1       8.2      17.0      29.2      89.1     191.3
+     579     81690       7.0      10.1       8.3      17.0      29.8     100.7     199.9
+     594     81758       7.0      10.2       8.3      17.1      29.4      81.6     201.5
+     608     81621       7.1      10.2       8.4      17.1      29.3      59.8     207.5
+     624     81138       7.2      10.3       8.4      17.2      29.9      82.7     193.7
+     639     81370       7.2      10.4       8.5      17.3      29.9      67.8     205.3
+     654     71934       7.3      10.4       8.5      17.4      30.0      64.7     227.9
+     668     71722       7.4      10.4       8.6      17.3      29.8      61.6     201.3
+     684     72253       7.5      10.5       8.6      17.3      30.2      84.8     193.1
+     699     72265       7.5      10.6       8.7      17.5      30.5      88.4     196.7
+     715     72068       7.6      10.6       8.8      17.6      30.2      67.9     184.2
+     731     71679       7.6      10.6       8.8      17.5      29.7      67.7     194.3
+     748     72010       7.7      10.7       8.9      17.6      29.4      77.6     181.5
+     765     72187       7.7      10.8       8.9      17.8      29.7      53.1     187.8
+     782     71726       7.8      10.8       9.0      17.8      29.4      64.1     206.1
+     800     71758       7.9      10.9       9.1      17.9      31.1      77.3     191.6
+     809     72035       8.0      10.9       9.1      17.9      29.9      83.6     215.4
+     819     72164       8.0      11.0       9.1      17.9      30.1      88.0     233.8
+     829     71557       8.0      11.0       9.2      18.0      29.9      62.6     189.6
+     839     71946       8.1      11.1       9.2      17.9      30.1      63.5     242.3
+     849     71689       8.1      11.1       9.3      18.0      30.1      77.5     203.0
+     859     71496       8.1      11.2       9.3      18.1      30.9      71.7     211.8
+     869     71716       8.2      11.1       9.4      18.0      29.9      60.7     261.2
+     879     71541       8.2      11.2       9.4      18.1      30.7      56.1     262.7
+     889     71985       8.2      11.2       9.4      18.1      29.8      56.2     277.8
+     900     71522       8.3      11.3       9.5      18.2      30.4      87.5     197.0
+     910    143341       8.3      11.4       9.5      18.3      30.7      81.6     202.7
+     919    143945       8.4      11.3       9.6      18.2      30.6      79.8     198.9
+     929    143536       8.4      11.4       9.6      18.3      30.6      82.7     244.6
+     939    143304       8.4      11.5       9.7      18.4      31.1      76.1     233.1
+     949    142993       8.5      11.5       9.7      18.3      30.3      73.0     225.7
+     959    143468       8.5      11.5       9.7      18.4      31.0      74.6     229.6
+     969    142969       8.6      11.5       9.7      18.4      31.0      67.0     195.3
+     979    143798       8.6      11.6       9.8      18.4      30.5      66.5     225.5
+     990    143683       8.7      11.7       9.8      18.4      30.8      75.8     230.2
+    1000    143265       8.7      11.7       9.9      18.5      30.8      97.6     230.4
+    1008    112550       8.8      11.7       9.9      18.5      30.7      70.1     198.3
+    1016    112860       8.8      11.7       9.9      18.5      30.9      76.6     190.5
+    1025    113675       8.8      11.8       9.9      18.5      31.1      79.3     235.0
+    1033    112745       8.8      11.8      10.0      18.6      30.7      70.7     245.2
+    1042    113052       8.9      11.8      10.0      18.6      30.5      80.7     190.9
+    1050    112944       8.9      11.9      10.0      18.6      31.0      89.5     230.2
+    1059    112788       8.9      11.9      10.1      18.6      31.2      86.0     227.4
+    1067    112928       8.9      11.9      10.1      18.6      30.7      62.6     240.4
+    1076    113226       9.0      11.9      10.1      18.7      31.0      74.5     196.9
+    1085    112828       9.0      12.0      10.1      18.8      32.1      93.9     217.5
+    1110    122593       9.1      12.1      10.2      18.7      31.0      66.9     211.8
+    1135    123014       9.3      12.2      10.3      19.0      31.1      84.1     196.4
+    1160    122988       9.3      12.3      10.4      19.0      31.6      90.6     201.2
+    1187    123146       9.5      12.4      10.6      19.2      31.2      63.0     258.9
+    1213    122730       9.5      12.5      10.7      19.3      31.7      97.3     196.1
+    1241    123347       9.7      12.6      10.8      19.4      31.6      68.0     201.0
+    1269    123405       9.8      12.8      10.9      19.6      31.8      80.4     198.1
+    1298    121831       9.9      12.9      11.1      19.7      31.7      93.2     236.3
+    1327    122000      10.0      13.0      11.2      19.8      32.3      80.2     187.6
+    1357    122995      10.1      13.1      11.3      20.0      32.2      75.0     209.8
+    1374     82002      10.2      13.2      11.4      20.0      32.3      63.2     185.6
+    1391     81863      10.3      13.3      11.5      20.1      32.1      89.7     410.1
+    1408     82220      10.3      13.4      11.6      20.1      32.4      96.6     206.7
+    1425     81856      10.5      13.4      11.6      20.1      32.1      71.1     207.9
+    1443     81902      10.6      13.5      11.7      20.2      32.7      79.0     194.9
+    1461     82097      11.6      14.9      13.1      21.7      33.7      90.9     194.8
+    1479     81977      11.5      14.8      13.0      21.6      33.4      82.5     196.9
+    1497     82145      11.5      14.8      13.0      21.5      33.3     108.5     269.7
+    1515     81905      11.4      14.8      13.0      21.6      33.7      70.0     193.4
+    1534     82320      11.5      14.7      13.0      21.6      33.7      64.5     187.2
+    1547    122565      11.5      14.8      13.0      21.6      34.0      79.6     226.0
+    1559    123417      11.5      14.8      13.0      21.7      33.8      82.2     214.7
+    1572    122910      11.4      14.8      13.0      21.7      34.0      72.2     260.3
+    1585    122261      11.5      14.8      13.0      21.7      34.3      81.8     247.8
+    1598    122626      11.6      14.8      13.0      21.7      34.2      88.8     213.5
+    1611    122434      11.5      14.8      13.0      21.7      34.2      73.8     259.4
+    1624    123116      11.5      14.8      13.0      21.7      34.1      82.4     192.0
+    1637    122971      11.5      14.8      13.0      21.7      34.5      91.6     201.7
+    1651    122759      11.6      14.9      13.1      21.7      34.6      93.6     208.9
+    1664    122277      11.5      14.8      13.1      21.8      33.9      66.5     201.4
+    1681    132964      11.5      14.9      13.1      21.8      34.3      93.3     205.2
+    1698    132681      11.5      14.9      13.1      21.7      34.1      85.9     238.5
+    1716    133036      11.5      14.9      13.1      21.7      34.3      86.6     232.4
+    1733    133632      11.5      14.9      13.1      21.7      34.2      84.5     193.1
+    1751    133324      11.6      14.9      13.1      21.8      34.1      73.7     287.6
+    1769    133715      11.6      14.9      13.1      21.8      34.0      80.8     219.3
+    1787    133245      11.6      14.9      13.1      21.8      34.6      96.0     195.7
+    1806    133941      11.6      15.0      13.2      21.9      34.3      71.0     238.1
+    1824    133257      11.6      15.0      13.2      21.8      34.4      86.7     230.1
+    1843    133221      11.6      15.1      13.3      22.0      34.5      94.9     198.6
+    1858     71913      11.7      15.1      13.3      22.0      34.1     101.0     193.5
+    1873     72251      11.8      15.2      13.4      22.1      34.9      89.2     248.9
+    1889     71494      11.7      15.2      13.4      22.1      34.1      63.7     194.9
+    1904     71685      11.7      15.2      13.4      22.2      35.0      84.4     203.5
+    1920     71508      11.8      15.2      13.4      22.1      33.8      66.5     197.0
+    1936     72050      11.8      15.2      13.5      22.2      34.8      67.1     197.1
+    1952     71721      11.8      15.2      13.5      22.2      34.8      61.4     187.7
+    1968     71859      11.8      15.3      13.5      22.2      34.5      89.3     194.2
+    1984     71919      11.8      15.3      13.5      22.2      35.3      99.9     190.8
+    2000     71868      11.8      15.3      13.5      22.3      35.0      84.8     209.9
+    2083    389752      11.7      15.3      13.5      22.2      34.8      86.3     244.1
+    2169    389798      11.7      15.3      13.6      22.3      35.1      91.6     257.8
+    2259    388855      11.8      15.4      13.6      22.4      35.0      79.9     283.1
+    2352    389575      11.9      15.5      13.7      22.5      35.4      86.4     233.2
+    2449    389787      12.2      15.7      13.8      22.8      35.6      89.0     235.8
+    2551    389369      12.3      15.9      14.0      22.9      36.0      92.3     405.1
+    2656    388923      12.6      16.1      14.3      23.3      36.3      84.7     235.0
+    2766    388447      12.8      16.4      14.5      23.6      36.7      81.1     243.4
+    2881    388804      13.1      16.7      14.9      23.9      36.9      81.5     246.9
+    3000    390158      13.5      17.2      15.4      24.5      37.6      90.3     253.8
+    3088    256617      13.5      17.3      15.5      24.7      37.8      86.8     239.2
+    3178    256227      13.6      17.4      15.6      24.8      38.4     103.6     249.8
+    3270    257076      13.6      17.4      15.6      24.9      38.2      85.4     233.3
+    3366    256306      13.8      17.7      15.9      25.3      38.3      96.0     247.3
+    3464    256258      13.7      17.8      16.0      25.4      38.6      74.1     255.1
+    3565    255817      13.8      18.0      16.2      25.6      39.2     100.3     258.0
+    3669    256812      14.1      18.2      16.4      25.8      39.2      76.3     238.5
+    3776    255507      14.3      18.4      16.7      26.1      39.6     104.6     257.8
+    3887    256399      14.5      18.7      17.0      26.4      39.8      95.7     222.8
+    4000    256444      14.8      19.0      17.2      26.8      40.3      85.0     246.1
+    4090    204993      15.0      19.2      17.5      27.0      40.6      89.1     221.0
+    4183    205522      15.2      19.5      17.7      27.3      41.0      97.9     254.0
+    4277    205195      15.4      19.7      17.9      27.6      41.4      95.2     215.0
+    4373    206505      15.6      20.0      18.2      27.9      42.0     104.8     250.6
+    4472    206219      16.0      20.4      18.6      28.4      42.2      82.2     210.7
+    4573    205437      16.0      20.5      18.7      28.6      42.7      97.4     254.8
+    4676    204638      16.1      20.6      18.8      28.7      42.6     114.1     235.0
+    4782    204580      16.2      20.8      18.9      29.0      43.3     114.2     233.7
+    4890    205305      16.2      20.9      19.1      29.2      43.4     102.1     219.4
+    5000    205428      16.3      21.1      19.2      29.3      43.7     101.7     235.0
+    5092    143225      16.5      21.3      19.4      29.6      44.2     108.1     244.1
+    5186    142881      16.7      21.6      19.7      29.9      44.6     109.4     225.4
+    5281    143430      16.9      21.8      19.9      30.1      44.6     109.3     247.2
+    5378    143220      17.1      22.0      20.2      30.4      44.7     100.3     254.2
+    5477    143681      17.3      22.2      20.4      30.7      45.1     114.9     205.9
+    5578    143995      17.6      22.5      20.6      31.0      45.5     111.7     248.6
+    5681    143022      17.7      22.8      20.8      31.2      46.0     108.8     259.7
+    5785    144331      17.9      23.0      21.1      31.6      46.5     116.8     259.7
+    5892    143802      18.5      23.6      21.7      32.3      46.9      97.7     260.3
+    6000    143827      18.5      23.7      21.8      32.4      47.3     107.4     251.5
+    6093    122882      18.5      23.8      21.8      32.6      47.4      88.2     210.7
+    6188    123188      18.6      23.9      21.9      32.7      47.5     100.0     245.8
+    6284    122660      18.7      24.1      22.1      33.0      48.1     111.8     237.2
+    6382    122895      18.7      24.2      22.2      33.1      48.2     101.2     215.5
+    6481    122785      18.8      24.3      22.3      33.1      48.3     102.9     234.8
+    6581    122841      19.0      24.6      22.6      33.6      48.4      90.4     267.0
+    6684    122763      19.2      24.9      23.0      33.9      49.3     115.4     235.3
+    6787    122651      19.5      25.1      23.2      34.0      49.4     113.5     244.6
+    6893    122807      19.7      25.4      23.5      34.4      49.6     126.4     210.3
+    7000    122489      19.9      25.6      23.6      34.7      50.0     110.1     246.8
+    7094     82373      20.1      25.9      23.9      35.0      51.0     128.1     246.2
+    7189     82812      20.3      26.1      24.2      35.4      50.9      99.7     254.8
+    7286     82325      20.5      26.4      24.6      35.6      50.8     102.5     223.5
+    7384     82581      21.0      26.8      24.9      36.1      51.9      90.5     255.3
+    7483     82490      20.9      27.0      25.0      36.3      51.6     131.8     231.7
+    7584     82442      21.0      27.1      25.2      36.5      52.6     103.1     225.0
+    7686     82396      21.1      27.2      25.2      36.7      52.7      97.1     204.5
+    7789     82165      21.2      27.4      25.5      37.0      52.9     101.2     244.7
+    7894     82575      21.2      27.5      25.6      37.1      52.8     121.8     245.3
+    8000     82449      21.4      27.7      25.7      37.4      53.6     116.2     236.5
+    8095     81746      21.6      27.9      25.9      37.5      53.4     122.8     221.9
+    8191     81713      21.8      28.1      26.1      37.8      53.5     127.7     264.0
+    8288     81286      22.0      28.4      26.4      38.1      54.2     117.9     235.8
+    8386     81892      22.2      28.6      26.6      38.2      54.4     116.3     227.2
+    8485     81189      22.4      28.9      26.8      38.7      54.8     139.0     240.6
+    8586     81273      22.6      29.2      27.1      39.0      55.3     146.3     238.7
+    8688     81020      22.8      29.4      27.4      39.3      55.4     110.2     213.7
+    8790     81507      23.1      29.7      27.8      39.6      55.9     134.8     263.5
+    8895     81228      23.5      30.2      28.1      40.2      56.7     139.1     229.8
+    9000     81333      23.5      30.2      28.2      40.2      56.7     110.8     246.4
+    9095     62076      23.5      30.3      28.4      40.5      57.1     136.1     217.0
+    9192     61933      23.6      30.5      28.5      40.7      57.2     128.8     252.3
+    9289     61997      23.7      30.7      28.7      41.0      57.6     135.3     230.6
+    9387     61877      23.7      30.8      28.7      41.1      57.5     111.3     219.9
+    9487     61668      23.9      30.9      28.8      41.3      58.0      98.4     236.8
+    9587     61875      24.1      31.3      29.1      41.6      58.5     144.1     229.2
+    9689     61804      24.4      31.5      29.5      41.9      58.4     130.9     211.3
+    9791     62293      24.6      31.8      29.7      42.3      58.7     136.8     270.5
+    9895     62066      24.8      32.0      30.0      42.5      59.5     146.1     218.0
+   10000     61954      25.0      32.2      30.2      42.8      59.7     100.8     254.3
+   10352    184645      25.9      36.3      31.7      57.7      93.2     154.8     363.0
+   10717    184280      26.1      37.0      32.1      59.5      95.4     161.4     281.1
+   11095    184445      26.7      37.8      32.9      60.4      95.9     165.8     255.0
+   11486    184381      27.5      38.9      34.2      61.7      97.7     165.4     266.6
+   11891    184161      28.4      40.4      35.6      63.7     100.7     168.3     274.3
+   12310    184153      28.6      40.9      36.0      64.7     101.1     174.2     288.6
+   12744    184178      29.5      41.8      37.0      65.3     101.2     174.6     278.6
+   13193    184766      30.5      43.1      38.5      66.8     104.2     180.1     284.6
+   13659    184946      31.0      44.3      39.6      68.5     105.7     185.4     336.6
+   14140    184112      31.8      45.1      40.4      69.3     106.8     179.5     292.4
+   14639    164124      32.9      46.4      41.8      70.8     108.0     175.1     288.6
+   15155    163564      33.6      47.8      43.0      72.7     111.1     181.8     284.4
+   15690    163901      34.5      48.8      44.1      73.7     112.8     194.5     330.6
+   16244    163787      35.8      50.5      45.9      75.7     115.2     196.3     298.8
+   16817    163815      36.2      51.4      46.7      77.0     117.2     198.6     346.9
+   17410    164089      37.5      52.8      48.3      78.3     118.7     196.5     399.9
+   18024    163239      38.5      54.5      49.7      80.6     122.8     209.1     303.4
+   18660    164418      39.5      55.7      51.2      81.8     124.8     210.7     344.0
+   19318    163392      40.8      57.6      53.0      84.2     127.8     211.2     359.4
+   20000    163671      41.7      58.8      54.1      85.7     128.7     203.2     317.3
+   20411     92488      42.6      59.8      55.1      86.9     130.1     212.2     292.5
+   20831     92243      43.3      63.2      56.3      98.8     159.4     233.4     391.7
+   21259     92628      43.7      63.9      57.2      99.8     160.0     234.2     377.7
+   21695     92372      44.6      64.9      58.1     101.0     160.2     238.5     394.3
+   22141     92538      45.7      66.7      59.9     104.1     165.8     242.7     393.4
+   22596     92236      46.0      67.2      60.4     104.2     165.0     243.9     352.2
+   23061     92982      46.9      68.3      61.2     105.8     168.7     246.2     401.1
+   23535     92628      48.1      70.0      63.2     108.0     169.5     244.2     374.9
+   24018     92968      48.4      70.8      63.7     109.5     171.6     246.2     456.2
+   24512     92675      49.3      71.7      64.9     110.0     170.9     251.6     468.5
+   25012     82222      50.6      73.7      66.8     113.0     175.6     252.4     336.8
+   25523     81675      50.9      74.4      67.5     114.4     175.2     252.7     379.7
+   26044     81565      51.9      75.4      68.6     115.2     177.3     258.9     508.8
+   26575     81874      53.1      77.3      70.3     117.9     182.6     260.5     332.8
+   27118     81953      53.6      77.9      71.2     118.4     181.9     261.8     452.4
+   27671     82107      54.7      79.5      72.4     120.5     187.5     264.2     381.6
+   28236     81843      55.6      80.9      74.1     122.5     189.4     262.9     373.4
+   28812     81432      56.5      81.9      74.9     123.4     190.5     263.5     355.0
+   29400     82192      58.1      84.3      77.5     126.4     195.3     266.9     364.5
+   30000     82731      58.4      84.8      77.9     127.2     194.7     272.6     392.2
+   30436     61865      59.3      85.9      79.1     128.5     195.7     276.2     429.3
+   30879     61845      60.5      89.3      80.5     137.7     220.3     304.8     419.0
+   31328     61238      60.7      90.1      81.4     139.5     224.8     313.9     429.6
+   31784     61487      61.5      90.9      82.4     140.0     223.8     309.9     489.2
+   32246     61476      62.5      92.2      83.4     141.8     228.4     311.2     460.4
+   32715     61673      63.1      93.7      84.9     144.3     230.3     321.5     437.0
+   33191     61530      63.8      94.6      85.9     145.6     229.2     325.4     428.6
+   33673     61141      64.8      95.6      86.8     146.8     232.7     317.5     451.7
+   34163     61337      65.6      97.3      88.4     149.8     236.0     323.8     444.6
+   34660     61366      66.3      97.9      89.2     150.1     236.0     321.6     776.3
+   35160     51032      67.3      99.1      90.0     151.6     236.9     316.6     435.3
+   35668     50932      68.1     101.2      91.9     155.7     245.3     331.3     461.9
+   36182     51213      68.9     101.5      92.6     154.8     243.0     328.4     442.6
+   36705     51539      70.0     102.9      93.9     156.4     247.1     333.1     472.8
+   37234     51251      70.6     104.1      94.9     158.7     246.2     335.3     478.2
+   37772     51401      71.6     105.3      96.6     159.5     245.8     333.2     478.5
+   38317     51497      72.8     107.0      97.6     162.6     253.0     337.9     480.3
+   38870     51597      73.3     108.2      99.1     164.2     253.4     343.8     515.1
+   39431     51255      74.5     109.7     100.7     166.2     256.9     348.8     434.6
+   40000     51153      75.4     111.5     101.9     169.3     262.4     349.5     467.4
+   40489     50846      76.1     112.4     103.5     170.2     261.6     352.7     496.8
+   40985     50662      77.1     113.3     104.2     170.9     262.2     358.9     477.4
+   41486     50830      77.8     116.5     105.8     178.6     287.6     401.1     564.4
+   41993     51022      78.6     117.5     106.7     180.2     286.6     403.4     549.2
+   42507     51272      79.7     119.0     108.0     182.8     290.3     406.1     529.9
+   43027     50662      80.5     120.1     109.5     183.7     289.1     395.1     523.5
+   43553     50993      81.3     121.5     110.6     186.3     293.8     401.2     604.3
+   44086     50824      82.4     123.0     112.2     188.4     298.1     408.5     587.1
+   44625     50703      82.9     124.1     113.1     190.5     296.8     401.9     551.3
+   45171     50886      84.0     125.0     113.8     190.0     298.5     403.6     594.3
+   45632     30980      85.2     127.0     116.4     193.8     299.9     420.4     592.7
+   46098     30749      85.5     127.6     116.5     195.5     303.2     408.5     531.0
+   46569     31037      86.4     129.0     117.7     197.4     307.8     420.2     579.5
+   47044     31089      87.7     129.4     117.9     197.0     307.6     412.9     526.4
+   47524     30921      87.9     131.4     120.0     199.4     311.8     430.9     620.8
+   48009     31108      88.8     131.8     120.9     200.9     303.7     417.5     522.9
+   48499     31064      90.2     134.4     123.3     204.3     315.3     431.0     516.0
+   48995     31102      90.3     134.6     123.2     204.8     313.9     428.8     523.7
+   49495     30492      91.3     135.1     124.0     205.1     314.1     418.4     575.6
+   50000     31014      92.6     138.1     126.7     210.9     320.5     429.5     585.9
+   50920     61429      93.7     139.6     128.3     212.0     323.3     433.8     801.9
+   51857     61280      95.3     143.3     130.8     219.2     342.7     460.4     701.5
+   52811     61240      97.0     145.4     132.7     222.6     348.8     478.6     640.9
+   53783     61331      98.4     147.9     134.8     226.2     352.0     479.1     690.8
+   54772     61035     100.2     150.7     138.1     230.2     355.2     483.0     726.1
+   55780     61835     102.0     152.6     139.3     233.2     356.7     490.1     723.0
+   56806     61724     103.6     155.4     142.4     237.0     363.6     502.8     907.7
+   57852     61198     105.3     158.3     145.2     241.1     369.3     495.3     817.6
+   58916     61414     107.5     161.5     147.7     245.9     377.7     504.0     663.2
+   60000     61624     109.1     163.1     149.1     248.4     380.4     514.6     720.0
+   60932     40967     110.5     165.8     152.0     252.2     383.9     516.3     637.0
+   61879     40791     112.6     169.7     154.4     258.8     404.7     550.4     719.2
+   62840     40847     113.9     171.8     156.9     260.4     413.7     584.0     738.1
+   63816     41000     115.4     174.7     159.1     267.6     415.4     570.7     699.3
+   64807     41001     117.5     177.6     162.4     271.6     416.0     559.4     716.0
+   65814     41050     119.0     179.3     164.1     273.3     417.6     562.2     765.1
+   66837     40568     120.6     181.8     165.9     276.2     422.5     594.6     925.5
+   67875     40533     122.6     185.2     169.2     282.0     429.4     578.0     837.2
+   68929     41052     124.4     187.2     171.0     284.0     435.9     575.2     739.1
+   70000     41148     126.1     190.9     174.9     290.4     447.5     584.7     791.1
+   70941     41075     127.8     192.8     177.2     290.1     444.8     589.5     766.0
+   71895     41077     129.4     195.2     179.1     294.0     447.1     599.2     743.9
+   72861     41083     130.9     198.5     180.5     301.7     464.3     637.8     850.9
+   73841     40623     132.8     201.8     184.2     306.8     472.9     652.4     875.1
+   74833     41029     134.4     204.1     187.2     309.7     474.9     634.5     935.5
+   75839     40666     136.1     206.5     189.0     313.3     481.0     653.2     836.4
+   76859     41123     137.9     209.3     192.1     316.9     481.3     652.6    1105.2
+   77892     41167     139.8     211.6     194.7     319.2     486.8     637.5     948.7
+   78939     40653     141.3     214.1     196.8     322.5     495.9     679.6     875.2
+   80000     40807     143.0     217.3     201.0     327.5     498.8     655.5    1106.9
+   81805     41095     146.2     221.9     203.9     334.3     511.9     680.3     913.4
+   83651     40948     149.5     227.3     208.8     343.2     528.0     717.4     918.7
+   85539     40920     152.7     232.6     214.9     348.5     532.6     725.4     995.0
+   87469     41122     155.8     237.4     219.1     357.1     542.9     740.4     989.2
+   89443     40640     159.3     243.1     224.6     365.7     552.5     750.9    1043.6
+   91461     41015     162.8     248.1     230.2     370.2     557.2     758.7    1217.7
+   93525     40943     166.2     254.0     234.5     382.1     583.4     787.1    1263.4
+   95635     40884     170.2     259.2     239.5     386.9     589.4     803.8     970.7
+   97793     40917     173.5     265.3     245.0     398.5     605.0     811.2    1138.7
+  100000     41167     177.8     272.3     250.6     409.8     614.3     847.5    1263.5
+  103736     51343     183.6     281.3     259.3     418.9     640.7     871.7    1222.1
+  107612     51348     190.4     292.9     270.6     436.1     661.9     903.2    1157.4
+  111632     51387     197.4     303.1     279.7     450.7     668.0     915.9    1287.4
+  115803     51963     204.3     314.7     289.4     469.3     708.9     965.9    2002.1
+  120129     51760     211.7     325.7     299.9     482.2     728.5    1007.7    1364.2
+  124617     51554     219.4     338.6     311.2     502.7     758.9    1049.7    1435.1
+  129273     51891     227.5     351.2     323.1     518.4     786.8    1097.7    1710.6
+  134103     51557     235.6     365.8     335.4     543.3     812.7    1145.3    1753.7
+  139113     51350     244.1     379.2     348.4     558.6     846.4    1157.6    1807.4
+  144310     51630     253.1     393.6     362.0     579.5     875.0    1201.9    1770.5
+  149097    184008     261.0     406.6     374.2     600.7     903.0    1245.3    2270.4
+  154043    183989     269.6     420.2     387.6     618.9     928.9    1245.5    1982.8
+  159154    184333     278.4     434.8     400.5     640.6     963.0    1287.0    2678.7
+  164433    185256     287.4     449.2     414.3     660.2     988.9    1343.0    2250.6
+  169888    184026     296.5     464.4     428.0     683.2    1020.1    1370.0    2408.3
+  175524    184331     306.1     480.1     442.3     706.0    1059.1    1435.9    2424.5
+  181347    184099     316.1     496.4     457.7     729.6    1085.9    1441.3    1954.4
+  187363    184406     326.4     514.2     472.8     758.6    1132.5    1524.5    2437.9
+  193578    184200     337.1     531.1     488.8     781.4    1164.5    1583.4    2774.4
+  200000    184535     348.5     550.9     506.4     811.3    1201.0    1621.5    2591.7
+  205362    205150     357.2     565.4     519.0     832.0    1236.1    1641.9    3032.5
+  210868    204454     366.8     581.9     534.4     855.8    1279.7    1717.7    2531.7
+  216521    205241     376.6     599.0     550.2     881.7    1312.7    1758.5    3046.7
+  222326    205004     386.7     616.3     566.2     909.0    1349.3    1814.1    2912.1
+  228286    204733     396.7     632.0     580.6     931.7    1385.7    1834.5    3338.9
+  234406    204869     406.9     649.9     596.2     958.3    1427.5    1898.8    3287.1
+  240691    204382     417.8     668.9     612.8     989.5    1473.2    1978.5    2917.1
+  247144    204950     429.1     689.0     630.3    1019.0    1519.0    2020.3    3344.1
+  253770    204218     440.1     707.0     646.5    1045.9    1555.1    2057.8    3492.9
+  260573    204963     451.8     727.4     665.5    1075.5    1603.2    2130.7    3221.5
+  264270    153765     458.1     739.0     674.2    1097.1    1622.2    2151.3    3178.8
+  268020    153946     464.4     750.0     684.2    1112.7    1651.5    2196.1    3495.2
+  271823    154739     471.0     761.4     694.4    1132.7    1682.0    2240.4    3604.4
+  275681    154263     477.5     773.8     705.4    1150.2    1705.3    2223.1    3590.5
+  279592    153411     484.4     785.5     716.1    1166.1    1731.4    2272.9    3586.4
+  283560    153466     491.2     797.0     726.3    1181.8    1751.7    2345.8    3545.0
+  287583    154566     497.9     808.4     736.2    1203.5    1780.5    2329.7    3850.0
+  291664    154050     504.8     820.9     747.3    1219.0    1819.2    2401.6    3649.6
+  295803    153792     512.1     834.5     759.6    1242.0    1843.0    2448.3    4806.3
+  300000    153652     519.5     846.5     770.1    1258.1    1875.1    2488.7    4294.9
+  304983    185150     527.5     863.5     785.2    1288.0    1918.5    2524.1    3916.8
+  310050    184958     536.4     878.5     798.7    1308.6    1941.5    2558.9    3899.4
+  315200    184492     545.0     894.0     810.3    1335.8    1993.5    2634.7    3959.4
+  320436    184665     554.3     911.8     825.8    1362.4    2024.7    2639.9    4401.2
+  325759    185620     563.1     928.6     841.7    1388.0    2067.8    2720.6    5192.4
+  331170    183687     572.5     945.1     853.0    1415.3    2118.9    2829.2    4359.5
+  336672    184786     582.4     963.0     869.7    1439.1    2168.1    2841.0    4581.2
+  342264    185331     591.2     982.2     885.7    1473.2    2211.6    2972.1    4930.5
+  347950    184780     601.1     999.7     903.5    1497.3    2250.1    2987.6    4547.9
+  353730    184836     610.9    1018.4     920.4    1528.2    2290.6    3046.5    4770.6
+  358105    102642     618.3    1029.1     930.7    1541.8    2304.0    3103.0    5326.3
+  362535    102562     625.9    1043.6     942.5    1564.0    2361.5    3141.3    4614.1
+  367019    102520     633.6    1060.3     957.1    1594.0    2385.1    3182.6    5332.6
+  371558    102246     641.5    1072.8     969.1    1607.9    2442.5    3223.5    4644.8
+  376154    102849     649.2    1089.5     981.1    1640.5    2469.0    3315.8    7040.9
+  380807    103155     657.7    1106.4     996.8    1664.2    2507.9    3361.7    4927.6
+  385517    101739     665.5    1119.9    1008.9    1681.3    2530.9    3412.2    4934.0
+  390285    102434     673.1    1134.1    1020.6    1704.3    2565.9    3460.2    5579.3
+  395113    102747     681.9    1150.0    1032.4    1728.5    2620.0    3508.9    5055.7
+  400000    102626     690.2    1168.5    1050.8    1757.9    2654.7    3562.9    5107.0
+  404069     50745     696.9    1181.7    1065.0    1780.2    2681.5    3658.0    4702.5
+  408180     50677     704.2    1198.3    1078.8    1806.9    2734.2    3714.5    5003.1
+  412332     50971     712.1    1203.9    1082.6    1809.1    2766.5    3631.3    5216.1
+  416527     51003     718.6    1220.9    1097.8    1842.4    2770.6    3711.3    7473.2
+  420764     50870     726.3    1241.0    1119.9    1867.5    2843.2    3860.8    5791.7
+  425044     50821     733.6    1249.7    1128.1    1880.3    2826.0    3784.6    6133.3
+  429368     50980     741.0    1266.4    1140.3    1904.1    2918.8    3854.0    5656.1
+  433736     50736     748.8    1278.8    1155.7    1915.6    2888.5    3894.9    5854.2
+  438149     50600     755.9    1294.8    1165.8    1951.6    2907.8    3958.7    5622.9
+  442606     51021     763.9    1311.6    1184.9    1965.7    2993.5    4023.8    6691.3
+  453562     40817     782.1    1344.7    1212.3    2017.3    3052.8    4199.1    6330.3
+  464789     41084     801.6    1381.6    1246.7    2079.6    3122.9    4175.7    5402.9
+  476295     40814     821.4    1422.2    1285.3    2129.1    3227.0    4265.2    7169.6
+  488085     40645     842.9    1465.4    1325.0    2197.2    3332.4    4431.2    6280.0
+  500167     40661     862.1    1506.6    1363.7    2269.5    3352.7    4536.4    6469.9
+  512548     41088     883.5    1547.7    1407.3    2317.5    3443.4    4758.7    6342.8
+  525235     41141     906.4    1592.2    1446.7    2380.4    3568.2    4733.0    6654.8
+  538237     40793     928.2    1628.5    1478.3    2428.7    3637.0    4705.2    6019.3
+  551560     41028     952.4    1676.3    1523.2    2497.8    3724.4    4850.3    6626.9
+  565213     40954     973.2    1726.1    1573.0    2563.5    3819.1    5180.1    7714.7
+  583565     31055    1004.9    1794.1    1638.7    2660.5    3998.2    5347.4    7632.4
+  602512     30826    1036.4    1855.4    1694.7    2749.4    4116.2    5411.9    7085.8
+  622075     30833    1073.8    1928.4    1762.3    2867.4    4183.3    5569.3    7764.2
+  642273     30724    1109.7    1992.9    1834.5    2924.6    4282.7    5690.3    7602.1
+  663127     30998    1144.1    2064.5    1898.4    3018.4    4458.4    5880.9    8934.3
+  684658     31109    1178.8    2141.4    1973.3    3135.5    4556.5    5987.6    9358.9
+  706888     30938    1217.6    2218.6    2042.6    3258.2    4793.5    6330.6    8443.4
+  729840     31221    1257.9    2301.9    2123.4    3358.4    4873.5    6474.4    8358.1
+  753537     30594    1301.9    2376.2    2195.9    3456.5    4979.2    6569.3    9750.0
+  778003     31046    1342.1    2459.8    2278.4    3555.8    5151.3    6656.0    9262.7
+  797780     20303    1375.5    2531.7    2348.1    3663.8    5267.4    6798.8    9203.8
+  818060     20442    1414.7    2608.5    2423.4    3748.5    5436.9    7208.4    9305.2
+  838855     20346    1447.8    2680.4    2478.9    3869.2    5592.5    7234.0    9260.0
+  860179     20564    1491.3    2741.5    2560.1    3906.9    5557.4    7107.4    9840.1
+  882045     20286    1531.2    2819.4    2631.0    4019.0    5763.9    7424.2    8587.6
+  904467     20616    1577.2    2913.7    2713.5    4159.9    5965.8    7672.6    9847.8
+  927458     20390    1608.5    2992.3    2792.1    4268.1    6066.6    7727.8   10160.7
+  951034     20585    1646.3    3053.2    2857.3    4317.1    6056.1    7796.4    9684.6
+  975210     20451    1687.8    3156.4    2952.5    4477.1    6224.8    8428.5   11679.0
+ 1000000     20454    1729.9    3232.2    3033.8    4536.3    6491.5    8363.9   10535.5

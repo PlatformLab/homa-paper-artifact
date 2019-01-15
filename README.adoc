@@ -101,21 +101,44 @@ To make sure RAMCloud and DPDK are built correctly, run a basic performance test
 $ scripts/clusterperf.py --superuser --replicas 0 --transport homa+dpdk --dpdkPort 1 --verbose echo_basic
 ```
 
-If everything works as expected, you should see performance numbers similar to the following output
+If everything works as expected, you should see performance numbers similar to the following output (note: make sure CPU governor is set to `performance` and `idle=poll` is provided as a kernel boot parameter):
 ```
-echo0                  5.2 us     send 0B message, receive 0B message median
-echo0.min              5.0 us     send 0B message, receive 0B message minimum
-echo0.9                5.6 us     send 0B message, receive 0B message 90%
-echo0.99               6.5 us     send 0B message, receive 0B message 99%
-echo0.999             27.0 us     send 0B message, receive 0B message 99.9%
+echo0                  4.4 us     send 0B message, receive 0B message median
+echo0.min              4.2 us     send 0B message, receive 0B message minimum
+echo0.9                4.8 us     send 0B message, receive 0B message 90%
+echo0.99               5.4 us     send 0B message, receive 0B message 99%
+echo0.999             18.2 us     send 0B message, receive 0B message 99.9%
 echoBw0                0.0 B/s    bandwidth sending 0B messages
-echo100                5.7 us     send 100B message, receive 100B message median
-echo100.min            5.1 us     send 100B message, receive 100B message minimum
-echo100.9              5.9 us     send 100B message, receive 100B message 90%
-echo100.99             6.4 us     send 100B message, receive 100B message 99%
-echo100.999          508.9 us     send 100B message, receive 100B message 99.9%
-echoBw100             14.1 MB/s   bandwidth sending 100B messages
-...... more lines omitted ......
+echo100                4.9 us     send 100B message, receive 100B message median
+echo100.min            4.8 us     send 100B message, receive 100B message minimum
+echo100.9              5.2 us     send 100B message, receive 100B message 90%
+echo100.99             5.5 us     send 100B message, receive 100B message 99%
+echo100.999            7.3 us     send 100B message, receive 100B message 99.9%
+echoBw100             18.7 MB/s   bandwidth sending 100B messages
+echo1K                 8.7 us     send 1000B message, receive 1KB message median
+echo1K.min             8.5 us     send 1000B message, receive 1KB message minimum
+echo1K.9               9.0 us     send 1000B message, receive 1KB message 90%
+echo1K.99              9.3 us     send 1000B message, receive 1KB message 99%
+echo1K.999            11.5 us     send 1000B message, receive 1KB message 99.9%
+echoBw1K             107.7 MB/s   bandwidth sending 1KB messages
+echo10K               25.0 us     send 10000B message, receive 10KB message median
+echo10K.min           24.9 us     send 10000B message, receive 10KB message minimum
+echo10K.9             25.1 us     send 10000B message, receive 10KB message 90%
+echo10K.99            25.5 us     send 10000B message, receive 10KB message 99%
+echo10K.999           73.9 us     send 10000B message, receive 10KB message 99.9%
+echoBw10K            376.1 MB/s   bandwidth sending 10KB messages
+echo100K             178.0 us     send 100000B message, receive 100KB message median
+echo100K.min         177.7 us     send 100000B message, receive 100KB message minimum
+echo100K.9           178.5 us     send 100000B message, receive 100KB message 90%
+echo100K.99          181.8 us     send 100000B message, receive 100KB message 99%
+echo100K.999         357.7 us     send 100000B message, receive 100KB message 99.9%
+echoBw100K           532.6 MB/s   bandwidth sending 100KB messages
+echo1M                1.72 ms     send 1000000B message, receive 1MB message median
+echo1M.min            1.71 ms     send 1000000B message, receive 1MB message minimum
+echo1M.9              1.72 ms     send 1000000B message, receive 1MB message 90%
+echo1M.99             1.89 ms     send 1000000B message, receive 1MB message 99%
+echo1M.999            2.04 ms     send 1000000B message, receive 1MB message 99.9%
+echoBw1M             553.8 MB/s   bandwidth sending 1MB messages
 ```
 
 ## Generate Baseline Numbers
