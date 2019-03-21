@@ -1,0 +1,1 @@
+This directory contains the original experiment data used in the paper. To generate the same plots that appeared in the paper, create a sub-directory named `impl` and run `slowdownImpl.r`.
