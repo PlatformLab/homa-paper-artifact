@@ -6,7 +6,7 @@ toc::[]
 
 # Introduction
 
-With this artifact, we provide the reviewers with the ability to run workloads W3-W5 using the RAMCloud implementation of Homa transport and reproduce its performance numbers. For the simulation code, please check out the https://github.com/PlatformLab/HomaSimulation/tree/omnet_simulations/RpcTransportDesign/OMNeT%2B%2BSimulation[HomaSimulation] repository.
+With this artifact, we provide the reviewers with the ability to run workloads W3-W5 using the RAMCloud implementation of Homa transport and reproduce its performance numbers. For the simulation code, please check out the https://github.com/PlatformLab/HomaSimulation/tree/omnet_simulations/RpcTransportDesign/OMNeT%2B%2BSimulation[HomaSimulation] repository. The CDF files of the workloads can be found https://github.com/PlatformLab/HomaSimulation/tree/omnet_simulations/RpcTransportDesign/OMNeT%2B%2BSimulation/homatransport/sizeDistributions[here]; they are copied and renamed to W1-W5 in the https://github.com/PlatformLab/RAMCloud/tree/homa-artifact-eval/benchmarks/homa/messageSizeCDFs[RAMCloud repository].
 
 The files included in this repository are:
 
